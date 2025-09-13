@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - Comunidade Nerd(Junior)</title>
+  <link rel="stylesheet" href="css/styleca.css">
+</head>
+<body>
+  <div class="container">
+    <h1><a href="index.html">Home</a></h1>
+    <p>Maior comunidade Nerd(Junior)</p>
+
+    <h2>Cadastro</h2>
+    <p>Preencha os campos abaixo para fazer parte da nossa comunidade</p>
+
+    <form>
+      <label for="nome">Nickname:</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com">
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999">
+
+      <label for="assunto">Assunto:</label>
+      <select id="assunto" name="assunto">
+        <option value="">Selecione um assunto</option>
+        <option value="duvida">Dúvida</option>
+        <option value="sugestao">Sugestão</option>
+        <option value="outro">Outro</option>
+      </select>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem..."></textarea>
+
+      <div class="buttons">
+        <button type="submit">Enviar</button>
+        <button type="reset">Apagar</button>
+      </div>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; Todos os direitos Reservados</p>
+  </footer>
+</body>
+</html>
