@@ -1,0 +1,112 @@
+body{
+    background-color: rgb(159, 149, 247); /*mudar a cor do background(fundo)*/
+    font-family: 'Robot', sans-serif
+}
+.button {
+  position: relative;
+  background-color: #9e6aff;
+  border: none;
+  font-size: 28px;
+  color: #ff0000;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+.imagem-fundo {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.imagem-fundo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.texto-sobre {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px black;
+}
+/* Selecionando todas as tabelas */
+table {
+  border-collapse: collapse; /* faz as bordas se unirem, fica mais limpo */
+  border: 1px solid #000000; /* cor e espessura da borda */
+  border-radius: 2px; /* bordas arredondadas */
+  width: 400px; /* largura da tabela */
+}
+
+/* Bordas das células */
+th, td {
+  border: 1px solid #000000; /* bordas internas dos pixels */
+  padding: 1px; /* espaço dentro dos pixels*/
+}
+
+/* Fundo do cabeçalho */
+th {
+  background-color: #00ff15;
+  text-align: center;
+}
+.login-box {
+  position: absolute; 
+  top: 20px;
+  right: 20px;
+  background-color: #9e4caf;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.4);
+}
+
+.login-box a {
+  color: white;
+  text-decoration: none;
+  font-weight: 2px;
+  font-family: 'Robot', sans-serif;
+}
+
+.login-box:hover {
+  background-color: #a04589;
+  cursor: pointer;
+}
+.login-box {
+  position: absolute; 
+  top: 20px;
+  right: 20px;
+  background-color: #af4ca7;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.4);
+
+  z-index: 9999; /* garante que vai ficar acima de imagens e textos */
+}
